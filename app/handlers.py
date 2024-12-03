@@ -9,6 +9,7 @@ router = Router()
 @router.message(CommandStart())
 async def start(message: Message) -> None: 
 	await message.answer(f"{re.get_text("texts/start_message.txt")}")
+    print("Привет Денис")
 
 
 
